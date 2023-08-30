@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Web Page</title>
+</head>
+<body>
+    <h1>Here are some delicious foods!</h1>
+    @{
+        List<string> foods =new(){"Apple Pie", "Pizza", "Cinnamon Roll", "Lasagna", "Donuts", "Chocolate Cake", "Burritos"};
+            foreach (string food in foods)
+            {
+                if(food == "Cinnamon Roll")
+                {
+                    <p style="color: red;">@food</p>
+                }
+                <p>@food</p>
+            }
+    }
+</body>
+</html>
